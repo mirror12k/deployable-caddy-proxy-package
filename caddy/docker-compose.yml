@@ -1,0 +1,12 @@
+services:
+  caddy-proxy:
+    image: caddy:alpine
+    container_name: caddy-proxy
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /caddy/caddy_data:/etc/caddy:ro
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
