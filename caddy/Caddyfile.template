@@ -14,3 +14,11 @@ materialious.love.local:80 {
 jellyfin.love.local:80 {
     reverse_proxy localhost:8096
 }
+
+shinobi.love.local:80 {
+    reverse_proxy localhost:8080
+}
+
+n8n.love.local:80 {
+    reverse_proxy localhost:5678
+}
