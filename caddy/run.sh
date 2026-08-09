@@ -19,6 +19,6 @@ cp /app/docker-compose.yml "$CADDY_ROOT/docker-compose.yml"
 cd "$CADDY_ROOT"
 
 echo "[i] pulling images"
-docker-compose pull
+docker compose pull
 echo "[i] starting caddy proxy docker..."
-docker-compose up
+docker compose up
